@@ -115,7 +115,7 @@ public class RecyclerFastScroller extends FrameLayout {
 
         mMinScrollHandleHeight = fortyEightDp;
 
-        int eightDp = RecyclerFastScrollerUtils.convertDpToPx(getContext(), 8);
+        int eightDp = RecyclerFastScrollerUtils.convertDpToPx(getContext(), 4);
         mHiddenTranslationX = (RecyclerFastScrollerUtils.isRTL(getContext()) ? -1 : 1) * eightDp;
         mHide = new Runnable() {
             @Override
@@ -253,7 +253,7 @@ public class RecyclerFastScroller extends FrameLayout {
     public void setTouchTargetWidth(int touchTargetWidth) {
         mTouchTargetWidth = touchTargetWidth;
 
-        int eightDp = RecyclerFastScrollerUtils.convertDpToPx(getContext(), 8);
+        int eightDp = RecyclerFastScrollerUtils.convertDpToPx(getContext(), 4);
         mBarInset = mTouchTargetWidth - eightDp;
 
         int fortyEightDp = RecyclerFastScrollerUtils.convertDpToPx(getContext(), 48);
